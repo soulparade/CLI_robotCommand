@@ -1,8 +1,27 @@
 {
   "version": 2,
-  "dgSpecHash": "/I0VyjQDRK0x4fKUFKYDciHvhpWPU3Dspyd1GVnB6RgK8TZHvjzRb36f1ezYrXslZmPAQNQkEGhgr3I3q2XxYA==",
+  "dgSpecHash": "9Z1k6tAOoPT6gA0vOt3FlIzLYo0tBFzGKRkhV0mQ+4iR2d+DqionYUYnxADHLB/fOmN9XKzXtg1p5Wzkk1mWMA==",
   "success": true,
   "projectFilePath": "C:\\Users\\user\\Desktop\\RoBusto_\\RoBusto\\RoBusto.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\runtime.android-arm.runtime.native.system.io.ports\\9.0.0-preview.4.24266.19\\runtime.android-arm.runtime.native.system.io.ports.9.0.0-preview.4.24266.19.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\runtime.android-arm64.runtime.native.system.io.ports\\9.0.0-preview.4.24266.19\\runtime.android-arm64.runtime.native.system.io.ports.9.0.0-preview.4.24266.19.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\runtime.android-x64.runtime.native.system.io.ports\\9.0.0-preview.4.24266.19\\runtime.android-x64.runtime.native.system.io.ports.9.0.0-preview.4.24266.19.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\runtime.android-x86.runtime.native.system.io.ports\\9.0.0-preview.4.24266.19\\runtime.android-x86.runtime.native.system.io.ports.9.0.0-preview.4.24266.19.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\runtime.linux-arm.runtime.native.system.io.ports\\9.0.0-preview.4.24266.19\\runtime.linux-arm.runtime.native.system.io.ports.9.0.0-preview.4.24266.19.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\runtime.linux-arm64.runtime.native.system.io.ports\\9.0.0-preview.4.24266.19\\runtime.linux-arm64.runtime.native.system.io.ports.9.0.0-preview.4.24266.19.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\runtime.linux-bionic-arm64.runtime.native.system.io.ports\\9.0.0-preview.4.24266.19\\runtime.linux-bionic-arm64.runtime.native.system.io.ports.9.0.0-preview.4.24266.19.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\runtime.linux-bionic-x64.runtime.native.system.io.ports\\9.0.0-preview.4.24266.19\\runtime.linux-bionic-x64.runtime.native.system.io.ports.9.0.0-preview.4.24266.19.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\runtime.linux-musl-arm.runtime.native.system.io.ports\\9.0.0-preview.4.24266.19\\runtime.linux-musl-arm.runtime.native.system.io.ports.9.0.0-preview.4.24266.19.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\runtime.linux-musl-arm64.runtime.native.system.io.ports\\9.0.0-preview.4.24266.19\\runtime.linux-musl-arm64.runtime.native.system.io.ports.9.0.0-preview.4.24266.19.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\runtime.linux-musl-x64.runtime.native.system.io.ports\\9.0.0-preview.4.24266.19\\runtime.linux-musl-x64.runtime.native.system.io.ports.9.0.0-preview.4.24266.19.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\runtime.linux-x64.runtime.native.system.io.ports\\9.0.0-preview.4.24266.19\\runtime.linux-x64.runtime.native.system.io.ports.9.0.0-preview.4.24266.19.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\runtime.maccatalyst-arm64.runtime.native.system.io.ports\\9.0.0-preview.4.24266.19\\runtime.maccatalyst-arm64.runtime.native.system.io.ports.9.0.0-preview.4.24266.19.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\runtime.maccatalyst-x64.runtime.native.system.io.ports\\9.0.0-preview.4.24266.19\\runtime.maccatalyst-x64.runtime.native.system.io.ports.9.0.0-preview.4.24266.19.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\runtime.native.system.io.ports\\9.0.0-preview.4.24266.19\\runtime.native.system.io.ports.9.0.0-preview.4.24266.19.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\runtime.osx-arm64.runtime.native.system.io.ports\\9.0.0-preview.4.24266.19\\runtime.osx-arm64.runtime.native.system.io.ports.9.0.0-preview.4.24266.19.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\runtime.osx-x64.runtime.native.system.io.ports\\9.0.0-preview.4.24266.19\\runtime.osx-x64.runtime.native.system.io.ports.9.0.0-preview.4.24266.19.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\system.io.ports\\9.0.0-preview.4.24266.19\\system.io.ports.9.0.0-preview.4.24266.19.nupkg.sha512"
+  ],
   "logs": []
 }

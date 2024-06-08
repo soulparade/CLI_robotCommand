@@ -1,16 +1,17 @@
+using System.IO.Ports;
+
 namespace RoBusto;
 
-
-public class Pannello_Di_Comunicazione : System.ComponentModel.Component
+public class Pannello_Di_Comunicazione
 {
     static SerialPort _serialPort;
-    
         
     public static Braccio bracciodx = Utils.DeserializeBraccio("Record_Angoli_DX");
 
     public void Comunicazione()
     {
-        _serialPort = new SerialPort(portName: "COM3", baudRate: 9600);
+        
+        _serialPort = new SerialPort(portName: Convert.ToString(SerialPort.GetPortNames()), baudRate: 9600);
 
         try
         {

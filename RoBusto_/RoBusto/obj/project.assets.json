@@ -1,11 +1,516 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {}
+    "net8.0": {
+      "runtime.android-arm.runtime.native.System.IO.Ports/9.0.0-preview.4.24266.19": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/android-arm/native/libSystem.IO.Ports.Native.so": {
+            "assetType": "native",
+            "rid": "android-arm"
+          }
+        }
+      },
+      "runtime.android-arm64.runtime.native.System.IO.Ports/9.0.0-preview.4.24266.19": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/android-arm64/native/libSystem.IO.Ports.Native.so": {
+            "assetType": "native",
+            "rid": "android-arm64"
+          }
+        }
+      },
+      "runtime.android-x64.runtime.native.System.IO.Ports/9.0.0-preview.4.24266.19": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/android-x64/native/libSystem.IO.Ports.Native.so": {
+            "assetType": "native",
+            "rid": "android-x64"
+          }
+        }
+      },
+      "runtime.android-x86.runtime.native.System.IO.Ports/9.0.0-preview.4.24266.19": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/android-x86/native/libSystem.IO.Ports.Native.so": {
+            "assetType": "native",
+            "rid": "android-x86"
+          }
+        }
+      },
+      "runtime.linux-arm.runtime.native.System.IO.Ports/9.0.0-preview.4.24266.19": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/linux-arm/native/libSystem.IO.Ports.Native.so": {
+            "assetType": "native",
+            "rid": "linux-arm"
+          }
+        }
+      },
+      "runtime.linux-arm64.runtime.native.System.IO.Ports/9.0.0-preview.4.24266.19": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/linux-arm64/native/libSystem.IO.Ports.Native.so": {
+            "assetType": "native",
+            "rid": "linux-arm64"
+          }
+        }
+      },
+      "runtime.linux-bionic-arm64.runtime.native.System.IO.Ports/9.0.0-preview.4.24266.19": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/linux-bionic-arm64/native/libSystem.IO.Ports.Native.so": {
+            "assetType": "native",
+            "rid": "linux-bionic-arm64"
+          }
+        }
+      },
+      "runtime.linux-bionic-x64.runtime.native.System.IO.Ports/9.0.0-preview.4.24266.19": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/linux-bionic-x64/native/libSystem.IO.Ports.Native.so": {
+            "assetType": "native",
+            "rid": "linux-bionic-x64"
+          }
+        }
+      },
+      "runtime.linux-musl-arm.runtime.native.System.IO.Ports/9.0.0-preview.4.24266.19": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/linux-musl-arm/native/libSystem.IO.Ports.Native.so": {
+            "assetType": "native",
+            "rid": "linux-musl-arm"
+          }
+        }
+      },
+      "runtime.linux-musl-arm64.runtime.native.System.IO.Ports/9.0.0-preview.4.24266.19": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/linux-musl-arm64/native/libSystem.IO.Ports.Native.so": {
+            "assetType": "native",
+            "rid": "linux-musl-arm64"
+          }
+        }
+      },
+      "runtime.linux-musl-x64.runtime.native.System.IO.Ports/9.0.0-preview.4.24266.19": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/linux-musl-x64/native/libSystem.IO.Ports.Native.so": {
+            "assetType": "native",
+            "rid": "linux-musl-x64"
+          }
+        }
+      },
+      "runtime.linux-x64.runtime.native.System.IO.Ports/9.0.0-preview.4.24266.19": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/linux-x64/native/libSystem.IO.Ports.Native.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          }
+        }
+      },
+      "runtime.maccatalyst-arm64.runtime.native.System.IO.Ports/9.0.0-preview.4.24266.19": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/maccatalyst-arm64/native/libSystem.IO.Ports.Native.dylib": {
+            "assetType": "native",
+            "rid": "maccatalyst-arm64"
+          }
+        }
+      },
+      "runtime.maccatalyst-x64.runtime.native.System.IO.Ports/9.0.0-preview.4.24266.19": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/maccatalyst-x64/native/libSystem.IO.Ports.Native.dylib": {
+            "assetType": "native",
+            "rid": "maccatalyst-x64"
+          }
+        }
+      },
+      "runtime.native.System.IO.Ports/9.0.0-preview.4.24266.19": {
+        "type": "package",
+        "dependencies": {
+          "runtime.android-arm.runtime.native.System.IO.Ports": "9.0.0-preview.4.24266.19",
+          "runtime.android-arm64.runtime.native.System.IO.Ports": "9.0.0-preview.4.24266.19",
+          "runtime.android-x64.runtime.native.System.IO.Ports": "9.0.0-preview.4.24266.19",
+          "runtime.android-x86.runtime.native.System.IO.Ports": "9.0.0-preview.4.24266.19",
+          "runtime.linux-arm.runtime.native.System.IO.Ports": "9.0.0-preview.4.24266.19",
+          "runtime.linux-arm64.runtime.native.System.IO.Ports": "9.0.0-preview.4.24266.19",
+          "runtime.linux-bionic-arm64.runtime.native.System.IO.Ports": "9.0.0-preview.4.24266.19",
+          "runtime.linux-bionic-x64.runtime.native.System.IO.Ports": "9.0.0-preview.4.24266.19",
+          "runtime.linux-musl-arm.runtime.native.System.IO.Ports": "9.0.0-preview.4.24266.19",
+          "runtime.linux-musl-arm64.runtime.native.System.IO.Ports": "9.0.0-preview.4.24266.19",
+          "runtime.linux-musl-x64.runtime.native.System.IO.Ports": "9.0.0-preview.4.24266.19",
+          "runtime.linux-x64.runtime.native.System.IO.Ports": "9.0.0-preview.4.24266.19",
+          "runtime.maccatalyst-arm64.runtime.native.System.IO.Ports": "9.0.0-preview.4.24266.19",
+          "runtime.maccatalyst-x64.runtime.native.System.IO.Ports": "9.0.0-preview.4.24266.19",
+          "runtime.osx-arm64.runtime.native.System.IO.Ports": "9.0.0-preview.4.24266.19",
+          "runtime.osx-x64.runtime.native.System.IO.Ports": "9.0.0-preview.4.24266.19"
+        }
+      },
+      "runtime.osx-arm64.runtime.native.System.IO.Ports/9.0.0-preview.4.24266.19": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/osx-arm64/native/libSystem.IO.Ports.Native.dylib": {
+            "assetType": "native",
+            "rid": "osx-arm64"
+          }
+        }
+      },
+      "runtime.osx-x64.runtime.native.System.IO.Ports/9.0.0-preview.4.24266.19": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/osx-x64/native/libSystem.IO.Ports.Native.dylib": {
+            "assetType": "native",
+            "rid": "osx-x64"
+          }
+        }
+      },
+      "System.IO.Ports/9.0.0-preview.4.24266.19": {
+        "type": "package",
+        "dependencies": {
+          "runtime.native.System.IO.Ports": "9.0.0-preview.4.24266.19"
+        },
+        "compile": {
+          "lib/net8.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/net8.0/System.IO.Ports.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          },
+          "runtimes/win/lib/net8.0/System.IO.Ports.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "runtime.android-arm.runtime.native.System.IO.Ports/9.0.0-preview.4.24266.19": {
+      "sha512": "IPBkifCLdzKPCQGiSfebWUc2xntcaZnR63LUXGEWA6n0Ym+xDlummHmPFtDwH8UCzNrEFEN4hM0OfNnJKhuAKQ==",
+      "type": "package",
+      "path": "runtime.android-arm.runtime.native.system.io.ports/9.0.0-preview.4.24266.19",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "runtime.android-arm.runtime.native.system.io.ports.9.0.0-preview.4.24266.19.nupkg.sha512",
+        "runtime.android-arm.runtime.native.system.io.ports.nuspec",
+        "runtimes/android-arm/native/libSystem.IO.Ports.Native.so",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "runtime.android-arm64.runtime.native.System.IO.Ports/9.0.0-preview.4.24266.19": {
+      "sha512": "NgqZUkalU5wqk2szLQXhkVYwRW0Z3315uDxxvPKbwzMp3NVI1y/eg9LmjZujnS9yBKo7mYlukaoQpKDA9jcvoQ==",
+      "type": "package",
+      "path": "runtime.android-arm64.runtime.native.system.io.ports/9.0.0-preview.4.24266.19",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "runtime.android-arm64.runtime.native.system.io.ports.9.0.0-preview.4.24266.19.nupkg.sha512",
+        "runtime.android-arm64.runtime.native.system.io.ports.nuspec",
+        "runtimes/android-arm64/native/libSystem.IO.Ports.Native.so",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "runtime.android-x64.runtime.native.System.IO.Ports/9.0.0-preview.4.24266.19": {
+      "sha512": "sYifX0gNizruR3sh54Nqm0qoDZVgpHiLNsGnW3RYnZymgaiKUWGOvqV2iNVGcZp7hB4pL9EjAplLlxlYfOVUtQ==",
+      "type": "package",
+      "path": "runtime.android-x64.runtime.native.system.io.ports/9.0.0-preview.4.24266.19",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "runtime.android-x64.runtime.native.system.io.ports.9.0.0-preview.4.24266.19.nupkg.sha512",
+        "runtime.android-x64.runtime.native.system.io.ports.nuspec",
+        "runtimes/android-x64/native/libSystem.IO.Ports.Native.so",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "runtime.android-x86.runtime.native.System.IO.Ports/9.0.0-preview.4.24266.19": {
+      "sha512": "rb0QkPJvGbifKy0YEkgqw4Qa+UWP9Gq3Bhi+QMqjZ3MLeJHNn8IuGp/6pCViG/Q3Y2MxaP9v3+zvntJ4IJ7h8g==",
+      "type": "package",
+      "path": "runtime.android-x86.runtime.native.system.io.ports/9.0.0-preview.4.24266.19",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "runtime.android-x86.runtime.native.system.io.ports.9.0.0-preview.4.24266.19.nupkg.sha512",
+        "runtime.android-x86.runtime.native.system.io.ports.nuspec",
+        "runtimes/android-x86/native/libSystem.IO.Ports.Native.so",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "runtime.linux-arm.runtime.native.System.IO.Ports/9.0.0-preview.4.24266.19": {
+      "sha512": "w4LdVt3LAebdfdSjUAovaImJKgJW9AQxnoP08vMQPUXzQ4dDsVkbystjGV8SA6yyeV2QIg7OIwGHRZIBg9budw==",
+      "type": "package",
+      "path": "runtime.linux-arm.runtime.native.system.io.ports/9.0.0-preview.4.24266.19",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "runtime.linux-arm.runtime.native.system.io.ports.9.0.0-preview.4.24266.19.nupkg.sha512",
+        "runtime.linux-arm.runtime.native.system.io.ports.nuspec",
+        "runtimes/linux-arm/native/libSystem.IO.Ports.Native.so",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "runtime.linux-arm64.runtime.native.System.IO.Ports/9.0.0-preview.4.24266.19": {
+      "sha512": "NoqjXkeV+LNnukywSkRA8E2x+i1K/WElgkt8h4DtINgtydevgg2fT7vZRTAFU9yS2APO4oC5GGlN6XM1t7BqQQ==",
+      "type": "package",
+      "path": "runtime.linux-arm64.runtime.native.system.io.ports/9.0.0-preview.4.24266.19",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "runtime.linux-arm64.runtime.native.system.io.ports.9.0.0-preview.4.24266.19.nupkg.sha512",
+        "runtime.linux-arm64.runtime.native.system.io.ports.nuspec",
+        "runtimes/linux-arm64/native/libSystem.IO.Ports.Native.so",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "runtime.linux-bionic-arm64.runtime.native.System.IO.Ports/9.0.0-preview.4.24266.19": {
+      "sha512": "mpVZnwPdRwShiY+nFdxM3fnZPI73rNMOQblwCZvLGmEUmhOYsNisH45K7ssjGp00jLc/cV8VRoHt7XdJMylQ4w==",
+      "type": "package",
+      "path": "runtime.linux-bionic-arm64.runtime.native.system.io.ports/9.0.0-preview.4.24266.19",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "runtime.linux-bionic-arm64.runtime.native.system.io.ports.9.0.0-preview.4.24266.19.nupkg.sha512",
+        "runtime.linux-bionic-arm64.runtime.native.system.io.ports.nuspec",
+        "runtimes/linux-bionic-arm64/native/libSystem.IO.Ports.Native.so",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "runtime.linux-bionic-x64.runtime.native.System.IO.Ports/9.0.0-preview.4.24266.19": {
+      "sha512": "Rzmep+HaUGUAU1qSAAHYczyqiHPSTctf8/p/m6pA98fcNvBsgWOumR9TnI7ruEl00Z/dh/P4aVNa2eX8T2kxyw==",
+      "type": "package",
+      "path": "runtime.linux-bionic-x64.runtime.native.system.io.ports/9.0.0-preview.4.24266.19",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "runtime.linux-bionic-x64.runtime.native.system.io.ports.9.0.0-preview.4.24266.19.nupkg.sha512",
+        "runtime.linux-bionic-x64.runtime.native.system.io.ports.nuspec",
+        "runtimes/linux-bionic-x64/native/libSystem.IO.Ports.Native.so",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "runtime.linux-musl-arm.runtime.native.System.IO.Ports/9.0.0-preview.4.24266.19": {
+      "sha512": "ilPKrvjg71mxwHWW6j0hrrXMBrMtauZT0BdyfXBBvbSViVj7Zc6FR+sEeqgiSdiR4N1V/sHQc0rc66fRGmptQw==",
+      "type": "package",
+      "path": "runtime.linux-musl-arm.runtime.native.system.io.ports/9.0.0-preview.4.24266.19",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "runtime.linux-musl-arm.runtime.native.system.io.ports.9.0.0-preview.4.24266.19.nupkg.sha512",
+        "runtime.linux-musl-arm.runtime.native.system.io.ports.nuspec",
+        "runtimes/linux-musl-arm/native/libSystem.IO.Ports.Native.so",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "runtime.linux-musl-arm64.runtime.native.System.IO.Ports/9.0.0-preview.4.24266.19": {
+      "sha512": "rSi92Y5ZBzqYBUXRR1M2x66tbuFIPlw2kNiCq5HmX8UkiSNGfgDD8EPy7MZyMYGa3G1/NmwrvJpZZMTuXwrXgw==",
+      "type": "package",
+      "path": "runtime.linux-musl-arm64.runtime.native.system.io.ports/9.0.0-preview.4.24266.19",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "runtime.linux-musl-arm64.runtime.native.system.io.ports.9.0.0-preview.4.24266.19.nupkg.sha512",
+        "runtime.linux-musl-arm64.runtime.native.system.io.ports.nuspec",
+        "runtimes/linux-musl-arm64/native/libSystem.IO.Ports.Native.so",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "runtime.linux-musl-x64.runtime.native.System.IO.Ports/9.0.0-preview.4.24266.19": {
+      "sha512": "i7WnR+5L/5KpQpxWXlZun8kMV0tphDNaott3OWIN07spg0/ffapmp9WuJM6vQS+F9834SEv4faPuDVLSuvyGzQ==",
+      "type": "package",
+      "path": "runtime.linux-musl-x64.runtime.native.system.io.ports/9.0.0-preview.4.24266.19",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "runtime.linux-musl-x64.runtime.native.system.io.ports.9.0.0-preview.4.24266.19.nupkg.sha512",
+        "runtime.linux-musl-x64.runtime.native.system.io.ports.nuspec",
+        "runtimes/linux-musl-x64/native/libSystem.IO.Ports.Native.so",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "runtime.linux-x64.runtime.native.System.IO.Ports/9.0.0-preview.4.24266.19": {
+      "sha512": "gwwsTxV/tRX03yONSnFTkL0HNWK3TL6JoviwNjsQLeLGB8xs0YOq/GkfcZBDIcRJl37ycrxS9QbcAqnsAZpzLw==",
+      "type": "package",
+      "path": "runtime.linux-x64.runtime.native.system.io.ports/9.0.0-preview.4.24266.19",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "runtime.linux-x64.runtime.native.system.io.ports.9.0.0-preview.4.24266.19.nupkg.sha512",
+        "runtime.linux-x64.runtime.native.system.io.ports.nuspec",
+        "runtimes/linux-x64/native/libSystem.IO.Ports.Native.so",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "runtime.maccatalyst-arm64.runtime.native.System.IO.Ports/9.0.0-preview.4.24266.19": {
+      "sha512": "fLmW/i6xub+lag3czSQmasDZExYYzSaYGn5a0+eWZ7fJKYq1LN3WTHxYPxdRh+SaNnK07Tr0bkNQe9njeBnS6Q==",
+      "type": "package",
+      "path": "runtime.maccatalyst-arm64.runtime.native.system.io.ports/9.0.0-preview.4.24266.19",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "runtime.maccatalyst-arm64.runtime.native.system.io.ports.9.0.0-preview.4.24266.19.nupkg.sha512",
+        "runtime.maccatalyst-arm64.runtime.native.system.io.ports.nuspec",
+        "runtimes/maccatalyst-arm64/native/libSystem.IO.Ports.Native.dylib",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "runtime.maccatalyst-x64.runtime.native.System.IO.Ports/9.0.0-preview.4.24266.19": {
+      "sha512": "t7rAdx+PH1xYQrlY0hqG/TrwVzRG8WPbjdR9jvOcdB4Eh4i4tFVOBOUbuqHM7hAybdCCnb08I20fk8nJIG6nfA==",
+      "type": "package",
+      "path": "runtime.maccatalyst-x64.runtime.native.system.io.ports/9.0.0-preview.4.24266.19",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "runtime.maccatalyst-x64.runtime.native.system.io.ports.9.0.0-preview.4.24266.19.nupkg.sha512",
+        "runtime.maccatalyst-x64.runtime.native.system.io.ports.nuspec",
+        "runtimes/maccatalyst-x64/native/libSystem.IO.Ports.Native.dylib",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "runtime.native.System.IO.Ports/9.0.0-preview.4.24266.19": {
+      "sha512": "2+5vyUZpC7M9KfpYCfC8LYJyJ0Tv3rL3PDP6XBXKFrkDzNnO6oULsgkdPg3yFagceOn9K+pFYtEpsWjVQdP1gw==",
+      "type": "package",
+      "path": "runtime.native.system.io.ports/9.0.0-preview.4.24266.19",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "runtime.native.system.io.ports.9.0.0-preview.4.24266.19.nupkg.sha512",
+        "runtime.native.system.io.ports.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "runtime.osx-arm64.runtime.native.System.IO.Ports/9.0.0-preview.4.24266.19": {
+      "sha512": "po+lBdqTLXTGDFTp/ouM4CRK/CCNpdPgfnurEelm2NzMJmUK+bThamoFtf78Bh4Q7OVFCY9azSdHwTZC/iCHJg==",
+      "type": "package",
+      "path": "runtime.osx-arm64.runtime.native.system.io.ports/9.0.0-preview.4.24266.19",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "runtime.osx-arm64.runtime.native.system.io.ports.9.0.0-preview.4.24266.19.nupkg.sha512",
+        "runtime.osx-arm64.runtime.native.system.io.ports.nuspec",
+        "runtimes/osx-arm64/native/libSystem.IO.Ports.Native.dylib",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "runtime.osx-x64.runtime.native.System.IO.Ports/9.0.0-preview.4.24266.19": {
+      "sha512": "qRG/iXhR+WplKIev0TsYl1JN7FQpR1K1jBkinmOval3OUBTgxKVGmm69l56vKO6OqZXF3R4SpUB8PwWSsN4LVA==",
+      "type": "package",
+      "path": "runtime.osx-x64.runtime.native.system.io.ports/9.0.0-preview.4.24266.19",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "runtime.osx-x64.runtime.native.system.io.ports.9.0.0-preview.4.24266.19.nupkg.sha512",
+        "runtime.osx-x64.runtime.native.system.io.ports.nuspec",
+        "runtimes/osx-x64/native/libSystem.IO.Ports.Native.dylib",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "System.IO.Ports/9.0.0-preview.4.24266.19": {
+      "sha512": "7659wqTTXbE4J9a4ZarE3PvJrHB30XbzMjw+9O3BzcDu54ANfJLBF9oEubYWg3RRPbjIpjrLUjkFweMvASNRbw==",
+      "type": "package",
+      "path": "system.io.ports/9.0.0-preview.4.24266.19",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.IO.Ports.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net8.0/_._",
+        "buildTransitive/netcoreapp2.0/System.IO.Ports.targets",
+        "lib/net462/System.IO.Ports.dll",
+        "lib/net462/System.IO.Ports.xml",
+        "lib/net8.0/System.IO.Ports.dll",
+        "lib/net8.0/System.IO.Ports.xml",
+        "lib/net9.0/System.IO.Ports.dll",
+        "lib/net9.0/System.IO.Ports.xml",
+        "lib/netstandard2.0/System.IO.Ports.dll",
+        "lib/netstandard2.0/System.IO.Ports.xml",
+        "runtimes/unix/lib/net8.0/System.IO.Ports.dll",
+        "runtimes/unix/lib/net8.0/System.IO.Ports.xml",
+        "runtimes/unix/lib/net9.0/System.IO.Ports.dll",
+        "runtimes/unix/lib/net9.0/System.IO.Ports.xml",
+        "runtimes/win/lib/net8.0/System.IO.Ports.dll",
+        "runtimes/win/lib/net8.0/System.IO.Ports.xml",
+        "runtimes/win/lib/net9.0/System.IO.Ports.dll",
+        "runtimes/win/lib/net9.0/System.IO.Ports.xml",
+        "system.io.ports.9.0.0-preview.4.24266.19.nupkg.sha512",
+        "system.io.ports.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0": []
+    "net8.0": [
+      "System.IO.Ports >= 9.0.0-preview.4.24266.19"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\user\\.nuget\\packages\\": {}
@@ -45,6 +550,12 @@
     "frameworks": {
       "net8.0": {
         "targetAlias": "net8.0",
+        "dependencies": {
+          "System.IO.Ports": {
+            "target": "Package",
+            "version": "[9.0.0-preview.4.24266.19, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

@@ -403,7 +403,9 @@ public class Program()
             
         } while (true);
 
-
+        Pannello_Di_Comunicazione pannello = new Pannello_Di_Comunicazione();
         
+        pannello.Comunicazione();
+
     }
 }
