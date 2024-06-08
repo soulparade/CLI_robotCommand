@@ -1,0 +1,72 @@
+{
+  "Nome": "bracciodx",
+  "spalla": {
+    "Servi": [
+      {
+        "MaxAngle": 0,
+        "MinAngle": 0,
+        "ActAngle": 0,
+        "Pin": 0
+      },
+      {
+        "MaxAngle": 0,
+        "MinAngle": 0,
+        "ActAngle": 0,
+        "Pin": 0
+      }
+    ]
+  },
+  "gomito": {
+    "Name": "gomito",
+    "MaxAngle": 0,
+    "MinAngle": 0,
+    "ActAngle": 0,
+    "Pin": 0
+  },
+  "polso": {
+    "Name": "polso",
+    "MaxAngle": 0,
+    "MinAngle": 0,
+    "ActAngle": 0,
+    "Pin": 0
+  },
+  "Mano": {
+    "Dita": [
+      {
+        "Name": "pollice",
+        "MaxAngle": 0,
+        "MinAngle": 0,
+        "ActAngle": 0,
+        "Pin": 0
+      },
+      {
+        "Name": "indice",
+        "MaxAngle": 0,
+        "MinAngle": 0,
+        "ActAngle": 0,
+        "Pin": 0
+      },
+      {
+        "Name": "medio",
+        "MaxAngle": 0,
+        "MinAngle": 0,
+        "ActAngle": 0,
+        "Pin": 0
+      },
+      {
+        "Name": "anulare",
+        "MaxAngle": 0,
+        "MinAngle": 0,
+        "ActAngle": 0,
+        "Pin": 0
+      },
+      {
+        "Name": "mignolo",
+        "MaxAngle": 0,
+        "MinAngle": 0,
+        "ActAngle": 0,
+        "Pin": 0
+      }
+    ]
+  }
+}

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Desktop\\RoBusto\\RoBusto\\RoBusto.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Desktop\\RoBusto_\\RoBusto\\RoBusto.csproj",
       "projectName": "RoBusto",
-      "projectPath": "C:\\Users\\user\\Desktop\\RoBusto\\RoBusto\\RoBusto.csproj",
+      "projectPath": "C:\\Users\\user\\Desktop\\RoBusto_\\RoBusto\\RoBusto.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Desktop\\RoBusto\\RoBusto\\obj\\",
+      "outputPath": "C:\\Users\\user\\Desktop\\RoBusto_\\RoBusto\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,6 +1,6 @@
 namespace RoBusto;
 
-public class Spalla(List<Servo> servo)
+public class Spalla(List<Servo> servi)
 {
-    public List<Servo> Servi { get; set; } = servo;
+    public List<Servo> Servi { get; set; } = servi;
 }

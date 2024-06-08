@@ -1,9 +1,12 @@
+using System.Text.Json.Serialization;
+using System.Text.Json;
+
 namespace RoBusto;
 
 public class Dito : Servo // finger
 {
     public string Name { get; set; }
-    public Dito(int maxAngle, int minAngle, int actAngle, int pin, string name): base(maxAngle, minAngle, actAngle, pin)
+    public Dito(int AngMax, int AngMin, int AngAtt, int Pin, string name): base(AngMax, AngMin, AngAtt, Pin)
     {
         Name = name;
     }
