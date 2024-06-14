@@ -6,12 +6,13 @@ public class Program()
 {
     static void Main()
     {
+
         Braccio bracciosx = Utils.DeserializeBraccio("BraccioSX");
         Braccio bracciodx = Utils.DeserializeBraccio("BraccioDX");
-
+        
         Console.WriteLine("Scegliere il Nome del File di log: ");
         string logfile = Console.ReadLine() ?? "Unknown message id: 42";
-        
+
         do
         {
             Console.WriteLine("scelta braccio: 0 = dx / 1 = sx / altro numero = andare avanti( pannello comunicazione )");
@@ -22,16 +23,16 @@ public class Program()
                 case 0:
                     Console.WriteLine("\n-0 spalla\n-1 gomito\n2- polso\n3- mano");
                     scelta = Convert.ToInt32(Console.ReadLine());
-                    
+
                     switch (scelta)
                     {
                         case 0:
                             foreach (var servo in bracciodx.Spalla.Servi)
                             {
                                 Console.WriteLine("Spalla destra:\n\n");
-                                
+
                                 Console.WriteLine("\nModificabili: \n0)AngoloMax: " + servo.AngMax + "\n1)AngoloMin: " + servo.AngMin + "\n2)AngoloAttuale: " + servo.AngAtt);
-                                
+
                                 Console.WriteLine("\nModificare qualcosa? Y/N");
                                 string modificaSpalla = Console.ReadLine();
 
@@ -68,9 +69,9 @@ public class Program()
                             break;
                         case 1:
                             Console.WriteLine("Gomito destro:\n\n");
-                                
+
                             Console.WriteLine("\nModificabili: \n0)AngoloMax: " + bracciodx.Gomito.AngMax + "\n1)AngoloMin: " + bracciodx.Gomito.AngMin + "\n2)AngoloAttuale: " + bracciodx.Gomito.AngAtt);
-                                
+
                             Console.WriteLine("\nModificare qualcosa? Y/N ");
                             string modificaGomito = Console.ReadLine();
 
@@ -92,7 +93,7 @@ public class Program()
                                         bracciosx.Gomito.AngMin = bracciosx.Gomito.Modifica(bracciosx.Gomito.AngMin, valore);
                                         Console.WriteLine("valore nuovo:" + bracciosx.Gomito.AngMin);
                                         break;
-                                    case 2: 
+                                    case 2:
                                         bracciosx.Gomito.AngAtt = bracciosx.Gomito.Modifica(bracciosx.Gomito.AngAtt, valore);
                                         Console.WriteLine("valore nuovo:" + bracciosx.Gomito.AngAtt);
                                         break;
@@ -101,14 +102,14 @@ public class Program()
                                 }
                                 Console.WriteLine("\nModificare qualcosa? Y/N ");
                                 modificaGomito = Console.ReadLine();
-                                
+
                             }
                             break;
                         case 2:
                             Console.WriteLine("Polso destro:\n\n");
-                                
+
                             Console.WriteLine("\nModificabili: \n0)AngoloMax: " + bracciodx.Polso.AngMax + "\n1)AngoloMin: " + bracciodx.Polso.AngMin + "\n2)AngoloAttuale: " + bracciodx.Polso.AngAtt);
-                                
+
                             Console.WriteLine("\nModificare qualcosa? Y/N ");
                             string modificaPolso = Console.ReadLine();
 
@@ -130,7 +131,7 @@ public class Program()
                                         bracciosx.Polso.AngMin = bracciosx.Polso.Modifica(bracciosx.Polso.AngMin, valore);
                                         Console.WriteLine("valore nuovo:" + bracciosx.Polso.AngMin);
                                         break;
-                                    case 2: 
+                                    case 2:
                                         bracciosx.Polso.AngAtt = bracciosx.Polso.Modifica(bracciosx.Polso.AngAtt, valore);
                                         Console.WriteLine("valore nuovo:" + bracciosx.Polso.AngAtt);
                                         break;
@@ -139,9 +140,9 @@ public class Program()
                                 }
                                 Console.WriteLine("\nModificare qualcosa? Y/N ");
                                 modificaPolso = Console.ReadLine();
-                                
+
                             }
-                            
+
                             break;
                         case 3:
                             foreach ( var dito in bracciodx.Mano.Dita)
@@ -153,7 +154,7 @@ public class Program()
 
                                 Console.WriteLine(dito.Name+": ");
                                 Console.WriteLine("\nModificabili: \n0)AngoloMax: " + dito.AngMax + "\n1)AngoloMin: " + dito.AngMin + "\n2)AngoloAttuale: " + dito.AngAtt);
-                                
+
                                 Console.WriteLine("\nModificare qualcosa? Y/N ");
                                 string modificaMano = Console.ReadLine();
 
@@ -215,9 +216,9 @@ public class Program()
                             foreach (var servo in bracciosx.Spalla.Servi)
                             {
                                 Console.WriteLine("Spalla destra:\n\n");
-                                
+
                                 Console.WriteLine("\nModificabili: \n0)AngoloMax: " + servo.AngMax + "\n1)AngoloMin: " + servo.AngMin + "\n2)AngoloAttuale: " + servo.AngAtt);
-                                
+
                                 Console.WriteLine("\nModificare qualcosa? Y/N ");
                                 string modificaSpalla = Console.ReadLine();
 
@@ -254,9 +255,9 @@ public class Program()
                             break;
                         case 1:
                             Console.WriteLine("Gomito sinistro:\n\n");
-                                
+
                             Console.WriteLine("\nModificabili: \n0)AngoloMax: " + bracciosx.Gomito.AngMax + "\n1)AngoloMin: " + bracciosx.Gomito.AngMin + "\n2)AngoloAttuale: " + bracciosx.Gomito.AngAtt);
-                                
+
                             Console.WriteLine("\nModificare qualcosa? Y/N ");
                             string modificaGomito = Console.ReadLine();
 
@@ -278,7 +279,7 @@ public class Program()
                                         bracciosx.Gomito.AngMin = bracciosx.Gomito.Modifica(bracciosx.Gomito.AngMin, valore);
                                         Console.WriteLine("valore nuovo:" + bracciosx.Gomito.AngMin);
                                         break;
-                                    case 2: 
+                                    case 2:
                                         bracciosx.Gomito.AngAtt = bracciosx.Gomito.Modifica(bracciosx.Gomito.AngAtt, valore);
                                         Console.WriteLine("valore nuovo:" + bracciosx.Gomito.AngAtt);
                                         break;
@@ -287,14 +288,14 @@ public class Program()
                                 }
                                     Console.WriteLine("\nModificare qualcosa? Y/N ");
                                     modificaGomito = Console.ReadLine();
-                                
+
                             }
                             break;
                         case 2:
                             Console.WriteLine("Polso sinistro:\n\n");
-                                
+
                             Console.WriteLine("\nModificabili: \n0)AngoloMax: " + bracciosx.Polso.AngMax + "\n1)AngoloMin: " + bracciosx.Polso.AngMin + "\n2)AngoloAttuale: " + bracciosx.Polso.AngAtt);
-                                
+
                             Console.WriteLine("\nModificare qualcosa? Y/N ");
                             string modificaPolso = Console.ReadLine();
 
@@ -316,7 +317,7 @@ public class Program()
                                         bracciosx.Polso.AngMin = bracciosx.Polso.Modifica(bracciosx.Polso.AngMin, valore);
                                         Console.WriteLine("valore nuovo:" + bracciosx.Polso.AngMin);
                                         break;
-                                    case 2: 
+                                    case 2:
                                         bracciosx.Polso.AngAtt = bracciosx.Polso.Modifica(bracciosx.Polso.AngAtt, valore);
                                         Console.WriteLine("valore nuovo:" + bracciosx.Polso.AngAtt);
                                         break;
@@ -325,9 +326,9 @@ public class Program()
                                 }
                                     Console.WriteLine("\nModificare qualcosa? Y/N ");
                                     modificaPolso = Console.ReadLine();
-                                
+
                             }
-                            
+
                             break;
                         case 3:
                             foreach ( var dito in bracciosx.Mano.Dita)
@@ -339,7 +340,7 @@ public class Program()
 
                                 Console.WriteLine(dito.Name+": ");
                                 Console.WriteLine("\nModificabili: \n0)AngoloMax: " + dito.AngMax + "\n1)AngoloMin: " + dito.AngMin + "\n2)AngoloAttuale: " + dito.AngAtt);
-                                
+
                                 Console.WriteLine("\nModificare qualcosa? Y/N ");
                                 string modificaMano = Console.ReadLine();
 
@@ -400,11 +401,11 @@ public class Program()
                 Utils.SerializeAndSaveBraccio(bracciosx, "BraccioSX");
                 break;
             }
-            
+
         } while (true);
 
         Pannello_Di_Comunicazione pannello = new Pannello_Di_Comunicazione();
-        
+
         pannello.Comunicazione();
 
     }

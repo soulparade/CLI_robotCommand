@@ -1,11 +1,11 @@
 namespace RoBusto;
 
-public class Servo(int angMax, int angMin, int angAtt, int pin)
+public class Servo(int AngMax, int AngMin, int AngAtt, int Pin)
 {
-    public int AngMax { get; set; } = angMax;
-    public int AngMin { get; set; } = angMin;
-    public int AngAtt { get; set; } = angAtt;
-    public int Pin { get; set; } = pin;
+    public int AngMax { get; set; } = AngMax;
+    public int AngMin { get; set; } = AngMin;
+    public int AngAtt { get; set; } = AngAtt;
+    public int Pin { get; set; } = Pin;
     
     string siglaMotore = "JX Servo PDI-6225MG-300";
     string marca = "JX Servo";

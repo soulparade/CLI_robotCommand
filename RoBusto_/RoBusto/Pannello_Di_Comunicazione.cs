@@ -1,4 +1,6 @@
+using System.Diagnostics.Contracts;
 using System.IO.Ports;
+using System.Runtime.CompilerServices;
 
 namespace RoBusto;
 
@@ -76,7 +78,7 @@ public class Pannello_Di_Comunicazione
             try
             {
 
-                Console.WriteLine("Inserire scelta: 0 singoli angoli, 1 posizioni preimpostate: ");
+                Console.WriteLine("Inserire scelta: 0 singoli angoli, 1 posizioni preimpostate, 2 aumento progressivo: ");
                 int scelta = Convert.ToInt32(Console.ReadLine());
                 if ( scelta == 0)
                 { 
@@ -145,19 +147,11 @@ public class Pannello_Di_Comunicazione
                             break;
                         case 2:
                             // segno vittoria 
-                            bracciodx.Mano.Dita[0].ChiudiMin();
-                            bracciodx.Mano.Dita[1].ApriMax();
-                            bracciodx.Mano.Dita[2].ApriMax();
-                            bracciodx.Mano.Dita[3].ChiudiMin();
-                            bracciodx.Mano.Dita[4].ChiudiMin();
-                                break;
+                            bracciodx.Mano.SegnoVittoria();
+                            break;
                         case 3:
-                                // ok
-                            bracciodx.Mano.Dita[0].ApriMax();
-                            bracciodx.Mano.Dita[1].ChiudiMin();
-                            bracciodx.Mano.Dita[2].ChiudiMin();
-                            bracciodx.Mano.Dita[3].ChiudiMin(); 
-                            bracciodx.Mano.Dita[4].ChiudiMin();
+                            // ok
+                            bracciodx.Mano.PolliceInSu();
                             break;
                         case 4:
                             //saluto
@@ -168,10 +162,45 @@ public class Pannello_Di_Comunicazione
                             break;
                     }
                     vetPos[0] = Convert.ToString(bracciodx.Mano.Dita[0].AngAtt); 
-                    vetPos[1] = Convert.ToString(bracciodx.Mano.Dita[0].AngAtt); 
-                    vetPos[2] = Convert.ToString(bracciodx.Mano.Dita[0].AngAtt); 
-                    vetPos[3] = Convert.ToString(bracciodx.Mano.Dita[0].AngAtt); 
-                    vetPos[4] = Convert.ToString(bracciodx.Mano.Dita[0].AngAtt); 
+                    vetPos[1] = Convert.ToString(bracciodx.Mano.Dita[1].AngAtt); 
+                    vetPos[2] = Convert.ToString(bracciodx.Mano.Dita[2].AngAtt); 
+                    vetPos[3] = Convert.ToString(bracciodx.Mano.Dita[3].AngAtt); 
+                    vetPos[4] = Convert.ToString(bracciodx.Mano.Dita[4].AngAtt); 
+                }
+
+                if (scelta == 2)
+                {
+                    while (true)
+                    {
+                        Console.WriteLine("\nCosa modificare: 0 Spalla, 1 gomito, 2 polso, 3 mano");
+                        scelta = Convert.ToInt32(Console.ReadLine());
+
+                        switch (scelta)
+                        {
+                            case 0:
+                                Console.WriteLine("Inserire quale dei mototri cambiare: 0/1");
+                                scelta = Convert.ToInt32(Console.ReadLine());
+                                
+                                ModificaGraduale(bracciodx.Spalla.Servi[scelta].AngAtt);
+                                break;
+                            case 1:
+                                ModificaGraduale(bracciodx.Gomito.AngAtt);
+                                break;
+                            case 2:
+                                ModificaGraduale(bracciodx.Polso.AngAtt);
+                                break;
+                            case 3:
+                                Console.WriteLine("Inserire quale dito cambiare: 0 pollice, 1 indice, 2 medio, 3 anulare, 4 mignolo");
+                                scelta = Convert.ToInt32(Console.ReadLine());
+                                
+                                ModificaGraduale(bracciodx.Mano.Dita[scelta].AngAtt);
+                                break;
+                            default:
+                                Console.WriteLine("Errore scelta");
+                                break;
+                        }
+                    }
+
                 }
                 string Pos = "handdx"+String.Join(",", vetPos);
                 Console.WriteLine(Pos);
@@ -182,6 +211,45 @@ public class Pannello_Di_Comunicazione
             
             { Console.WriteLine("Errore durante la scrittura sulla porta seriale: " + ex.Message);
             }
+        }
+    }
+
+    public static void ModificaGraduale( int angolo )
+    {
+
+       
+        Console.WriteLine("Inserire l'aumento che si desidera: "); 
+        int aumento = Convert.ToInt32(Console.ReadLine());
+
+        while (aumento >= 100 || aumento < 0)
+        {
+            Console.WriteLine("Reinserire l'aumento: ");
+            aumento = Convert.ToInt32(Console.ReadLine());
+        }
+        
+        while (true)
+        {
+            ConsoleKeyInfo keyInfo = Console.ReadKey(true);
+
+            if (keyInfo.Key  == ConsoleKey.OemPlus || keyInfo.Key == ConsoleKey.Add)
+            {
+                angolo+=aumento;
+                Console.WriteLine(angolo + "\n" );
+        
+            }
+
+            if (keyInfo.Key == ConsoleKey.OemMinus || keyInfo.Key == ConsoleKey.Subtract)
+            {
+                angolo-=aumento;
+                Console.WriteLine(angolo + "\n" );
+            }
+
+            if (keyInfo.Key == ConsoleKey.Enter)
+            {
+                break;
+            }
+            
+            _serialPort.Write(Convert.ToString(angolo));
         }
     }
 }
